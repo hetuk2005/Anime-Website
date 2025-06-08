@@ -506,7 +506,7 @@ h2 {
   .image1 {
     width: 300px;
     margin: 0 5px;
-    filter: brightness(40%);
+    filter: brightness(35%);
     object-fit: cover;
   }
   .item:hover,
@@ -514,15 +514,15 @@ h2 {
   .item img,
   .item:hover img {
     width: 350px;
-    height: 200px;
+    height: 400px;
     transition: none;
     object-fit: fill;
   }
   .text {
     left: 0;
     bottom: 0;
-    padding: 10px;
-    font-size: large;
+    padding: 10px 20px;
+    font-size: larger;
     font-weight: 600;
   }
   .latest {
