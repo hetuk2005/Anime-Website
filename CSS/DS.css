@@ -1299,3 +1299,42 @@ body.popup-active .popup-overlay {
     margin: 15px 217px;
   }
 }
+@media (min-width: 841px) and (max-width: 1360px) {
+  .title {
+    padding: 0;
+    text-align: center;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .child1 > ul > li,
+  .child1 > ul > a > li {
+    font-size: x-small;
+    padding: 0;
+  }
+  .child1 > ul,
+  .child1 > ul > a > li {
+    gap: 5px;
+  }
+  .image1 {
+    margin: 0;
+    margin-left: 230px;
+  }
+  .parent {
+    flex-direction: column;
+  }
+  .footer {
+    gap: 70px;
+  }
+  .ads {
+    rotate: 0deg;
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .ads {
+    padding-top: 190px;
+    padding-left: 40px;
+  }
+}

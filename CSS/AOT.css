@@ -1345,3 +1345,10 @@ body.popup-active .popup-overlay {
     padding: 30px 0;
   }
 }
+
+@media (min-width: 1500px) {
+  .ads {
+    padding-top: 190px;
+    padding-left: 40px;
+  }
+}
