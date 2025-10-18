@@ -495,19 +495,25 @@ h2 {
   display: none;
 }
 
-@media (max-width: 480px) {
+.menu {
+  display: none;
+}
+
+@media (max-width: 320px) {
   .navbar {
     display: none;
   }
+  .menu {
+    display: inline-block;
+  }
   .title {
-    width: 300px;
+    width: 100%;
     display: flex;
-    padding: 10px 0;
     height: auto;
-    padding: 10px 30px;
+    padding: 10px;
     align-items: center;
-    font-size: 15px;
-    gap: 50px;
+    font-size: 11px;
+    justify-content: space-between;
   }
   .search {
     display: inline-block;
@@ -519,48 +525,60 @@ h2 {
   .recent {
     display: grid;
     padding: 0;
-    width: 350px;
+    width: 100%;
     margin: 5px 0;
     justify-self: center;
   }
   .image1 {
     width: 300px;
     margin: 0 5px;
-    filter: brightness(35%);
+    filter: brightness(75%);
     object-fit: cover;
   }
   .item:hover,
   .item,
   .item img,
   .item:hover img {
-    width: 350px;
-    height: 400px;
+    width: 100%;
+    height: 250px;
     transition: none;
     object-fit: fill;
   }
-  .text {
+  .item:hover img {
+    filter: brightness(30%);
+  }
+  .item > a > .text {
     left: 0;
     bottom: 0;
-    padding: 10px 20px;
-    font-size: larger;
-    font-weight: 600;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 900;
+    display: inline-block;
+    color: white;
   }
   .latest {
     display: grid;
     padding-top: 10px;
+    gap: 0;
   }
   .child3 {
     margin: auto;
-    width: 330px;
+    width: 100%;
   }
   .anime {
     display: grid;
     width: inherit;
+    gap: 0;
+  }
+  .anime > a {
+    width: inherit;
+    height: 220px;
+    margin-bottom: 15px;
   }
   .latest_img {
-    width: 335px;
-    height: 200px;
-    object-fit: cover;
+    width: inherit;
+    height: 220px;
+    object-fit: fill;
     float: none;
   }
   .description > p {
@@ -569,18 +587,18 @@ h2 {
     padding-bottom: 15px;
   }
   .parent1 {
-    width: 300px;
+    width: 290px;
   }
   br,
   .btn4 {
     display: none;
   }
   .description {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .pagination {
-    width: inherit;
-    margin: 0 35px;
+    width: 100%;
+    margin: auto;
     padding: 15px 0;
   }
   .btn2 {
@@ -603,10 +621,22 @@ h2 {
   }
   .child4 {
     padding: 0;
+    width: 100%;
   }
   input {
-    width: 330px;
-    height: 45px;
+    width: 93%;
+    height: 40px;
+  }
+  .icons {
+    justify-content: space-between;
+  }
+  .uploads {
+    width: 93%;
+    padding-right: 0;
+  }
+  .discord,
+  .telegram {
+    width: 93%;
   }
   .ads {
     rotate: none;
@@ -616,17 +646,183 @@ h2 {
   .footer {
     gap: 20px;
     display: flex;
+    justify-content: space-between;
     height: auto;
     margin-top: 30px;
+    padding: 20px;
   }
   .text1 {
-    text-align: center;
     font-size: small;
     font-weight: 600;
   }
+  h2 {
+    margin-top: 10px;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 770px) {
+@media (min-width: 321px) and (max-width: 430px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .title {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    font-size: 11px;
+    justify-content: space-between;
+  }
+  .search {
+    display: inline-block;
+  }
+  .parent {
+    margin: 0;
+    padding: 3px 15px;
+  }
+  .recent {
+    display: grid;
+    padding: 0;
+    width: 100%;
+    margin: 5px 0;
+    justify-self: center;
+  }
+  .image1 {
+    width: 300px;
+    margin: 0 5px;
+    filter: brightness(75%);
+    object-fit: cover;
+  }
+  .item:hover,
+  .item,
+  .item img,
+  .item:hover img {
+    width: 100%;
+    height: 250px;
+    transition: none;
+    object-fit: fill;
+  }
+  .item:hover img {
+    filter: brightness(30%);
+  }
+  .item > a > .text {
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 900;
+    display: inline-block;
+    color: white;
+  }
+  .latest {
+    display: grid;
+    padding-top: 10px;
+    gap: 0;
+  }
+  .child3 {
+    margin: auto;
+    width: 100%;
+  }
+  .anime {
+    display: grid;
+    width: inherit;
+    gap: 0;
+  }
+  .anime > a {
+    width: inherit;
+    height: 220px;
+    margin-bottom: 15px;
+  }
+  .latest_img {
+    width: inherit;
+    height: 220px;
+    object-fit: fill;
+    float: none;
+  }
+  .description > p {
+    font-size: 15px;
+    padding: 3px 0;
+    padding-bottom: 15px;
+  }
+  .parent1 {
+    width: 67.7%;
+    max-width: 90%;
+  }
+  br,
+  .btn4 {
+    display: none;
+  }
+  .description {
+    padding-bottom: 30px;
+  }
+  .pagination {
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+  }
+  .btn2 {
+    border-radius: 0px;
+    width: 70px;
+    height: 40px;
+  }
+  .btn,
+  .btn3,
+  .btn4 {
+    border-radius: 0px;
+    width: 70px;
+    height: 40px;
+  }
+  .btn1 {
+    width: 150px;
+    margin: 0 20px;
+    height: 40px;
+    border-radius: 0px;
+  }
+  .child4 {
+    padding: 0;
+    width: 67%;
+  }
+  input {
+    width: 100%;
+    height: 40px;
+  }
+  .icons {
+    justify-content: space-between;
+  }
+  .uploads {
+    width: 100%;
+    padding-right: 0;
+  }
+  .discord,
+  .telegram {
+    width: 71%;
+  }
+  .ads {
+    rotate: none;
+    padding: 25px 0;
+    font-size: small;
+  }
+  .footer {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .text1 {
+    font-size: small;
+    font-weight: 600;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 770px) {
   .navbar,
   br {
     display: none;
