@@ -965,13 +965,18 @@ body.popup-active .popup-overlay {
   padding: 5px 15px;
 }
 
-@media (max-width: 480px) {
+.menu {
+  display: none;
+}
+
+@media (max-width: 320px) {
   .navbar,
   br,
   .flex_comment {
     display: none;
   }
-  .search {
+  .search,
+  .menu {
     display: inline-block;
   }
   .item:hover,
@@ -979,26 +984,36 @@ body.popup-active .popup-overlay {
     transition: none;
   }
   .title {
-    height: 50px;
+    width: 100%;
     display: flex;
+    height: auto;
+    padding: 10px;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px 0;
-    font-size: 15px;
+    font-size: 11px;
+    justify-content: space-between;
   }
   .parent {
     margin: 0;
     flex-direction: column;
     padding: 15px;
   }
+  .date,
+  .source {
+    font-size: 9px;
+  }
+  .clock,
+  .profile {
+    width: 15px;
+    height: 15px;
+  }
   .info {
     flex-wrap: wrap;
   }
   .image1 {
-    width: 97%;
+    width: 100%;
+    height: 400px;
     margin: 0;
     margin-top: 15px;
-    margin-left: 5px;
   }
   .anime_info {
     width: inherit;
@@ -1066,12 +1081,13 @@ body.popup-active .popup-overlay {
     justify-content: start;
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
   }
   .comment {
     margin-top: 30px;
   }
   input {
-    width: 330px;
+    width: 100%;
   }
   .child4 > h6 {
     margin-top: 20px;
@@ -1093,9 +1109,8 @@ body.popup-active .popup-overlay {
   }
   .discord,
   .telegram {
-    width: 50%;
-    display: block;
-    margin: auto;
+    width: 70%;
+    margin: 0;
   }
   .child4 > h2 {
     margin-top: 20px;
@@ -1103,8 +1118,8 @@ body.popup-active .popup-overlay {
   .ads {
     padding: 30px 10px;
     rotate: 0deg;
-    font-size: large;
-    font-weight: 600;
+    font-size: medium;
+    font-weight: 500;
   }
   .footer {
     gap: 15px;
@@ -1135,9 +1150,196 @@ body.popup-active .popup-overlay {
   .sl {
     margin-bottom: 20px;
   }
+  .outline > input::placeholder {
+    font-size: 13px;
+    font-style: italic;
+  }
+  .episode1_1 > p,
+  .episode1_2 > p,
+  .episode1_3 > p {
+    font-size: 13px;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 840px) {
+@media (min-width: 321px) and (max-width: 430px) {
+  .navbar,
+  br,
+  .flex_comment {
+    display: none;
+  }
+  .menu,
+  .search {
+    display: inline-block;
+  }
+  .item:hover,
+  .item:hover img {
+    transition: none;
+  }
+  .screenshot1 {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    font-size: 11px;
+    justify-content: space-between;
+  }
+  .parent {
+    margin: 0;
+    flex-direction: column;
+    padding: 3px 15px;
+  }
+  .date,
+  .source {
+    font-size: 9px;
+  }
+  .clock,
+  .profile {
+    width: 15px;
+    height: 15px;
+  }
+  .info {
+    flex-wrap: wrap;
+  }
+  .image1 {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    margin-top: 15px;
+  }
+  .anime_info {
+    width: inherit;
+  }
+  h4,
+  .black {
+    font-size: large;
+    padding: 10px 0;
+  }
+  .genre,
+  .org,
+  .run,
+  .lang,
+  .episodes,
+  .sub,
+  .quality,
+  .encoder,
+  .synopsis {
+    align-items: start;
+  }
+  .screenshot,
+  .sl,
+  .ss,
+  .episode1,
+  .zip1,
+  .zip,
+  .add,
+  .season1,
+  .season2,
+  .watch_on,
+  .click,
+  .button,
+  .anime1 > a > p,
+  .anime2 > a > p,
+  .anime3 > a > p,
+  .like,
+  .author,
+  .like_anime,
+  .comment,
+  .outline,
+  .hr_1,
+  .hr_2,
+  .hr_3,
+  .hr_4,
+  .hr_5,
+  .icons,
+  .purple,
+  .track,
+  .none,
+  .season1_1 {
+    width: inherit;
+  }
+  .none {
+    margin: auto;
+  }
+  .episode1 > p {
+    font-size: large;
+    padding: 20px 0;
+    padding-top: 15px;
+  }
+  .zip {
+    padding: 15px 0;
+  }
+  .watch {
+    margin: 30px 65px;
+  }
+  .click {
+    padding: 15px 0;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .like_anime {
+    justify-content: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .comment {
+    margin-top: 30px;
+  }
+  .outline > input::placeholder {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-style: italic;
+  }
+  input {
+    width: 100%;
+  }
+  .child4 > h6 {
+    margin-top: 20px;
+  }
+  .icons {
+    justify-content: space-around;
+  }
+  .icons > img {
+    width: 70px;
+    margin: 0;
+  }
+  .uploads {
+    padding: 15px 5px;
+  }
+  .hr_3,
+  .hr_4 {
+    margin-bottom: 30px;
+  }
+  .discord,
+  .telegram {
+    width: 70%;
+    margin: 0;
+  }
+  .child4 > h2 {
+    margin-top: 20px;
+  }
+  .ads {
+    padding: 30px 10px;
+    rotate: 0deg;
+    font-size: medium;
+    font-weight: 500;
+  }
+  .footer {
+    gap: 15px;
+    padding: 20px;
+    height: auto;
+  }
+  .text1 {
+    font-size: small;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 840px) {
   .navbar,
   br {
     display: none;

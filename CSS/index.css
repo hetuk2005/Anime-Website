@@ -670,7 +670,8 @@ h2 {
   .anime:hover {
     border: 0;
   }
-  .menu {
+  .menu,
+  .search {
     display: inline-block;
   }
   .title {
@@ -681,9 +682,6 @@ h2 {
     align-items: center;
     font-size: 11px;
     justify-content: space-between;
-  }
-  .search {
-    display: inline-block;
   }
   .parent {
     margin: 0;
