@@ -503,6 +503,9 @@ h2 {
   .navbar {
     display: none;
   }
+  .anime:hover {
+    border: 0;
+  }
   .menu {
     display: inline-block;
   }
@@ -663,6 +666,9 @@ h2 {
 @media (min-width: 321px) and (max-width: 430px) {
   .navbar {
     display: none;
+  }
+  .anime:hover {
+    border: 0;
   }
   .menu {
     display: inline-block;
