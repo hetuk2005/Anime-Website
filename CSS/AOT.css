@@ -1340,7 +1340,8 @@ body.popup-active .popup-overlay {
   br {
     display: none;
   }
-  .search {
+  .search,
+  .menu {
     display: inline-block;
   }
   .item:hover,
@@ -1355,40 +1356,43 @@ body.popup-active .popup-overlay {
     padding: 10px 0;
     font-size: large;
   }
-  .date > p,
-  .source > p {
-    font-size: medium;
+  .date,
+  .source {
+    font-size: 11px;
+  }
+  .clock,
+  .profile {
+    width: 17px;
+    height: 17px;
   }
   .child3 {
     margin: auto;
     padding: 0 15px;
-    width: 805px;
+    width: 95%;
   }
   .child3 > h5 {
     text-transform: none;
     padding: 0;
-    font-size: 39px;
+    font-size: 35px;
   }
   h4 {
     text-align: center;
     text-transform: none;
-    font-size: x-large;
+    font-size: larger;
   }
   .black {
-    padding-right: 15px;
-    font-size: 29px;
+    padding-right: 11px;
+    font-size: 27px;
     font-weight: 500;
   }
   .parent {
-    width: 100%;
     padding: 10px 0;
-    margin: auto;
+    margin: 0;
     display: grid;
   }
   .image1 {
-    width: auto;
-    margin: 0 170px;
-    padding: 0;
+    width: 50%;
+    margin: 0 190px;
     object-fit: contain;
   }
   .synopsis > .bold_1 {
@@ -1401,7 +1405,7 @@ body.popup-active .popup-overlay {
   .watch_on,
   .season1,
   .button {
-    width: 760px;
+    width: 90%;
   }
   .sl {
     font-size: 30px;
@@ -1430,7 +1434,7 @@ body.popup-active .popup-overlay {
   input {
     border: 1px solid;
     margin: 15px 7px;
-    width: 735px;
+    width: 91%;
   }
   .child4 > h6 {
     width: 200px;
@@ -1438,13 +1442,18 @@ body.popup-active .popup-overlay {
     padding: 8px 0;
   }
   .icons {
-    justify-content: space-around;
-    width: 735px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
   }
   .icons > img {
-    width: 70px;
+    width: 45px;
     height: auto;
     object-fit: cover;
+  }
+  .uploads {
+    padding-right: 0;
+    padding: 15px 21px;
   }
   .hr_1,
   .hr_2,
@@ -1475,9 +1484,8 @@ body.popup-active .popup-overlay {
   }
   .discord,
   .telegram {
-    display: block;
-    width: 50%;
-    margin: auto;
+    width: 30%;
+    margin: 0;
   }
   .child4 > h3 {
     width: 230px;
@@ -1542,9 +1550,25 @@ body.popup-active .popup-overlay {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2560px) {
+  .title,
+  .navbar,
+  .parent {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   .ads {
-    padding-top: 190px;
-    padding-left: 40px;
+    padding-top: 30px;
+    padding-left: 0;
+    rotate: none;
+  }
+  input {
+    width: 94%;
   }
 }
