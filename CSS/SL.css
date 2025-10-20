@@ -1304,10 +1304,12 @@ body.popup-active .popup-overlay {
 
 @media (min-width: 431px) and (max-width: 840px) {
   .navbar,
+  .info,
   br {
     display: none;
   }
-  .search {
+  .search,
+  .menu {
     display: inline-block;
   }
   .item:hover,
@@ -1322,42 +1324,44 @@ body.popup-active .popup-overlay {
     padding: 10px 0;
     font-size: large;
   }
-  .date > p,
-  .source > p {
-    font-size: medium;
+  .date,
+  .source {
+    font-size: 11px;
+  }
+  .clock,
+  .profile {
+    width: 17px;
+    height: 17px;
   }
   .child3 {
     margin: auto;
     padding: 0 15px;
-    width: 805px;
+    width: 95%;
   }
   .child3 > h5 {
-    width: 730px;
     text-transform: none;
     padding: 0;
-    font-size: 39px;
+    font-size: 35px;
   }
   h4 {
-    width: 730px;
     text-align: center;
     text-transform: none;
-    font-size: x-large;
+    font-size: larger;
   }
   .black {
-    padding-right: 15px;
-    font-size: 29px;
+    padding-right: 11px;
+    font-size: 27px;
     font-weight: 500;
   }
   .parent {
     width: 100%;
     padding: 10px 0;
-    margin: auto;
+    margin: 0;
     display: grid;
   }
   .image1 {
-    width: auto;
-    margin: 0 170px;
-    padding: 0;
+    width: 50%;
+    margin: 0 190px;
     object-fit: contain;
   }
   .synopsis > .bold_1 {
@@ -1370,7 +1374,7 @@ body.popup-active .popup-overlay {
   .watch_on,
   .season1,
   .button {
-    width: 760px;
+    width: 90%;
   }
   .sl {
     font-size: 30px;
@@ -1380,7 +1384,7 @@ body.popup-active .popup-overlay {
     grid-template-columns: repeat(2, 0fr);
     margin: 0;
     padding: 30px 0;
-    width: 750px;
+    width: 100%;
     gap: 40px;
   }
   .anime1,
@@ -1394,12 +1398,13 @@ body.popup-active .popup-overlay {
     padding: 0 15px;
   }
   .child4 {
+    width: 95%;
     padding: 15px;
   }
   input {
     border: 1px solid;
     margin: 15px 7px;
-    width: 735px;
+    width: 91%;
   }
   .child4 > h6 {
     width: 200px;
@@ -1407,13 +1412,18 @@ body.popup-active .popup-overlay {
     padding: 8px 0;
   }
   .icons {
-    justify-content: space-around;
-    width: 735px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
   }
   .icons > img {
-    width: 70px;
+    width: 45px;
     height: auto;
     object-fit: cover;
+  }
+  .uploads {
+    padding-right: 0;
+    padding: 15px 21px;
   }
   .hr_1,
   .hr_2,
@@ -1444,9 +1454,8 @@ body.popup-active .popup-overlay {
   }
   .discord,
   .telegram {
-    display: block;
-    width: 50%;
-    margin: auto;
+    width: 30%;
+    margin: 0;
   }
   .child4 > h3 {
     width: 230px;
@@ -1483,22 +1492,36 @@ body.popup-active .popup-overlay {
     padding: 0;
     text-align: center;
   }
-  .child1 > ul > li {
-    font-size: x-small;
+  .navbar {
+    width: 100%;
+  }
+  .child1 > ul > li,
+  .child1 > ul > a > li {
+    font-size: 7px;
     padding: 0;
   }
-  .child1 > ul {
-    gap: 5px;
+  .child1 > ul,
+  .child1 > ul > a > li {
+    gap: 7px;
   }
   .image1 {
-    margin: 0;
-    margin-left: 230px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
   }
   .parent {
     flex-direction: column;
   }
+  .like_anime {
+    justify-content: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
   .footer {
-    gap: 70px;
+    gap: 0;
+    justify-content: space-between;
   }
   .ads {
     rotate: 0deg;
@@ -1506,9 +1529,36 @@ body.popup-active .popup-overlay {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2560px) {
+  .title,
+  .navbar,
+  .parent {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .image1 {
+    width: 50%;
+    margin: auto;
+    display: block;
+    height: auto;
+  }
   .ads {
-    padding-top: 190px;
-    padding-left: 40px;
+    padding-top: 30px;
+    padding-left: 0;
+    rotate: none;
+  }
+  input {
+    width: 94%;
+  }
+  .footer {
+    padding: 15px 510px;
+    gap: 0;
+    justify-content: space-between;
   }
 }

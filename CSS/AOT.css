@@ -1386,6 +1386,7 @@ body.popup-active .popup-overlay {
     font-weight: 500;
   }
   .parent {
+    width: 100%;
     padding: 10px 0;
     margin: 0;
     display: grid;
@@ -1415,7 +1416,7 @@ body.popup-active .popup-overlay {
     grid-template-columns: repeat(2, 0fr);
     margin: 0;
     padding: 30px 0;
-    width: 750px;
+    width: 100%;
     gap: 40px;
   }
   .anime1,
@@ -1429,6 +1430,7 @@ body.popup-active .popup-overlay {
     padding: 0 15px;
   }
   .child4 {
+    width: 95%;
     padding: 15px;
   }
   input {
@@ -1527,22 +1529,31 @@ body.popup-active .popup-overlay {
   }
   .child1 > ul > li,
   .child1 > ul > a > li {
-    font-size: x-small;
+    font-size: 7px;
     padding: 0;
   }
   .child1 > ul,
   .child1 > ul > a > li {
-    gap: 5px;
+    gap: 7px;
   }
   .image1 {
-    margin: 0;
-    margin-left: 230px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
   }
   .parent {
     flex-direction: column;
   }
+  .like_anime {
+    justify-content: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
   .footer {
-    gap: 70px;
+    gap: 0;
+    justify-content: space-between;
   }
   .ads {
     rotate: 0deg;
@@ -1563,6 +1574,12 @@ body.popup-active .popup-overlay {
     justify-content: space-around;
     align-items: center;
   }
+  .image1 {
+    width: 50%;
+    margin: auto;
+    display: block;
+    height: auto;
+  }
   .ads {
     padding-top: 30px;
     padding-left: 0;
@@ -1570,5 +1587,10 @@ body.popup-active .popup-overlay {
   }
   input {
     width: 94%;
+  }
+  .footer {
+    padding: 15px 510px;
+    gap: 0;
+    justify-content: space-between;
   }
 }

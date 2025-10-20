@@ -65,3 +65,52 @@ ol > li {
   margin: 10px 20px;
   text-align: left;
 }
+
+@media (max-width: 320px) {
+  body {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+  }
+  header {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 430px) {
+  body {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+  }
+  header {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 2560px) {
+  body {
+    padding: 15px;
+  }
+  header {
+    font-size: 100px;
+  }
+  .clock {
+    height: 250px;
+  }
+  h3,
+  h4,
+  ol > p,
+  ol > li {
+    font-size: 55px;
+  }
+  ol > li {
+    margin: 35px 0;
+  }
+  .telegram {
+    width: 50%;
+    height: 200px;
+  }
+}
