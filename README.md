@@ -15,12 +15,11 @@ This project focuses on a modern UI, smooth browsing experience, and a simple an
 <hr>
 
 # 🚀 Live Demo Preview  
-<br>
-([hetukanime4all.netlify.app](https://hetukanime4all.netlify.app/))  
-<br><br>
 
-✨ Explore anime listings with clean UI & smooth interface  
-<br>  
+✨ Explore anime listings with clean UI & smooth interface   
+<br>
+<a href="https://hetukanime4all.netlify.app/" align="center"><strong>Live Demo</strong></a>
+<br>
 <hr>
 
 # 🖼️ Website Preview Images  
@@ -85,10 +84,9 @@ This project focuses on a modern UI, smooth browsing experience, and a simple an
 
 # ✨ Features  
 
-• ✔️ Modern UI/UX<br>
-• ✔️ Fully responsive design<br>
-• ✔️ Anime listing layout<br>
-• ✔️ Simple & clean interface
-
-• ✔️ Static hamburger icon (HTML/CSS only)  
+✔️ Modern UI/UX<br>
+✔️ Fully responsive design<br>
+✔️ Anime listing layout<br>
+✔️ Simple & clean interface  
+✔️ Static hamburger icon (HTML/CSS only)  
 
