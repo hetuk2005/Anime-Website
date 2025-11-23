@@ -27,21 +27,21 @@ This project focuses on a modern UI, smooth browsing experience, and a simple an
 
 ⭐ **Home Page**  
 <br>
-( Add Screenshot Here )  
+<img src="https://github.com/hetuk2005/Anime-Website/blob/main/utils/home_Page.png"/>
 <br><br>
 -------------------------------------------------------------------------------------------------------------------------
 <br>
 
 ⭐ **Anime Listing Page**  
 <br>
-( Add Screenshot Here )  
+<img src="https://github.com/hetuk2005/Anime-Website/blob/main/utils/Anime_Listing_Page.png"/>
 <br><br>
 -------------------------------------------------------------------------------------------------------------------------
 <br>
 
-⭐ **Footer Section**  
+⭐ **Anime Details Page**  
 <br>
-( Add Screenshot Here )  
+<img src="https://github.com/hetuk2005/Anime-Website/blob/main/utils/Anime_Details_Page.png"/>
 <br><br>
 -------------------------------------------------------------------------------------------------------------------------
 <br>
