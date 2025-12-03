@@ -90,3 +90,15 @@ This project focuses on a modern UI, smooth browsing experience, and a simple an
 ✔️ Simple & clean interface  
 ✔️ Static hamburger icon (HTML/CSS only)  
 
+<hr>
+
+# 🧑‍💻 Developer  
+-------------------------------------  
+
+⭐ **Hetuk Patel** → Creator & Designer  
+<br>
+💡 Designed with passion, focus & modern UI vision.  
+<hr>
+
+# 📄 License  
+This project is free to use for learning & personal purposes.
